@@ -1,13 +1,12 @@
-# rn-gzip
+# To reproduce : 
 
-![Build](https://github.com/LucasBourgeois/rn-gzip/workflows/Pre%20Merge%20Checks/badge.svg)
-
-This is your new React Native Reproducer project.
-
-## Reproducer todo list
-
-- [x] Create a new reproducer project.
-- [ ] Git clone your repository locally.
-- [ ] Edit the project to reproduce the failure you're seeing.
-- [ ] Push your changes, so that Github Actions can run the CI.
-- [ ] Make sure the repository is public and share the link with the issue you reported.
+* `npx create-expo-app expo-gzip  `
+* `yarn install`
+* `yarn android` 
+---
+* Open devtool
+* Look at network for the request
+* Response body and preview is broken.
+---
+Request is a GZIP accepting content type.
+It's done in App.js file
